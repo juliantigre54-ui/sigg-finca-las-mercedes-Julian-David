@@ -42,6 +42,7 @@
         <nav class="nav" aria-label="Principal">
             <a href="#modulos">Módulos</a>
             <a href="#proyecto">Proyecto</a>
+            <a href="#contacto">Contacto</a>
             <a class="nav__accion" href="#modulos">Entrar al sistema</a>
         </nav>
     </header>
@@ -179,6 +180,37 @@
                     </div>
                 </dl>
             </div>
+        </section>
+
+        <!-- ============ CONTACTO ============ -->
+        <section class="seccion" id="contacto">
+            <div class="seccion__encabezado">
+                <p class="cintillo">Contacto</p>
+                <h2 class="seccion__titulo">Hablemos sobre el proyecto</h2>
+                <p class="seccion__entrada">
+                    ¿Tienes dudas, sugerencias o quieres saber más sobre SIGG?
+                    Escríbenos y te responderemos pronto.
+                </p>
+            </div>
+
+            <form class="formulario-contacto" action="#" method="post">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="boton boton--fuerte">Enviar mensaje</button>
+            </form>
         </section>
 
     </main>
