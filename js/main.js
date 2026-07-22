@@ -32,4 +32,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    /* ---------- Formulario de contacto ----------
+       Como aún no hay backend, evitamos que el formulario
+       intente enviarse a "#" y en su lugar mostramos un
+       mensaje de confirmación al usuario. */
+    const formularioContacto = document.querySelector(".formulario-contacto");
+
+    if (formularioContacto) {
+        formularioContacto.addEventListener("submit", function (evento) {
+            evento.preventDefault();
+            alert("Gracias por escribirnos. Pronto te responderemos.");
+            formularioContacto.reset();
+        });
+    }
+
 });
